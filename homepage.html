@@ -1,10 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
+<!--    meta:vp移动设备优先 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" > 
+    <link rel="stylesheet" href="Css/kualiulanqi.css">
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.js"></script>
+    <![ednif]-->
     <title>首页</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            
+            background-image: url('image/homepage1.png');
+            background-repeat: no-repeat;
+          background-size:cover;
+            
+            
+        }
+        .kongbai{
+            
+            background-color:white;
+            width: auto;
+            height:50px;
+        }
+        #brand{
+            background-image: url('image/brand.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 50%;
+            padding-top: 200px;
+        }   
+        #homepage_brandintro p{
+            
+            color: white;
+            text-align: center;
+        }
+        #homepage_brandintro .artfont{
+           background-image: url('image/Digital%20Arts%20Department.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        #navgi{
+            
+            background-color: aliceblue;
+            width: 550px;
+            height: 40px;
+            opacity: 0.8;
+            border-radius: 2px;
+        }
+        #navgi a{
+            color:black;
+            font-size: 15px;
+            line-height: 40px;
+            margin: 0 5px;
+            font-weight: 600;
+        }
+        #navgi a:hover{
+            color:black;
+            text-decoration: none;
+            border-top-style: solid;
+            border-top-color: rgb(236, 9, 9);;
+            border-top-width: 3px;
+            font-size: 15px;
+            line-height: 40px;
+            text-align: center;
+          padding-top:9px;
+             font-weight: 600;
+        }
+        #navgi span.left_icon{
+            background-image: url('image/left_iconb.png');
+            background-position: left;
+            background-repeat: no-repeat;
+            width: auto;
+            height: 30%;
+            margin: 0px 10px;
+        }
+        #navgi span.left_icon:hover{
+            background-image: url('image/left_iconr.png');   
+        }
+        #navgi span.right_icon{
+            background-image: url('image/right_iconb.png');
+            background-position: right;
+            background-repeat: no-repeat;
+            width: auto;
+            height: 30%;
+            margin: 0px 10px;
+        }
+        #navgi span.right_icon:hover{
+            background-image: url('image/right_iconr.png');    
+        }
+        .inp:focus {
+         outline: none;   
+         border: 1px solid rgb(236, 9, 9);; 
+            }
+        .inp {
+         outline: none;   
+         border: 1px solid rgb(236, 9, 9);; 
+         }
+        
+        
+    </style>
 </head>
 <body>
+<div class="kongbai">
+    
+
+ <form action=""  class="navbar-form navbar-left " >
+    <input type="text" placeholder="搜索" class="form-control inp">
+    <button type="submit" class="btn btn-link btn btn-primary btn-md"  >
+        <span class="glyphicon glyphicon-search" style="color: rgb(236, 9, 9);"> </span>
+    </button>
+</form>
+<form action=""  class="navbar-form navbar-right " >
+    
+    <button type="submit" class="btn btn-link btn btn-primary btn-md"  >
+        <span class="glyphicon glyphicon-log-in" style="color: rgb(236, 9, 9);"> Log-in</span>
+        
+    </button>
+    <button type="submit" class="btn btn-link btn btn-primary btn-md"  >
+        
+        <span class="glyphicon glyphicon-user" style="color: rgb(236, 9, 9);"> User</span>
+    </button>
+</form>
+</div>
+
+
+<div class="container" id="brand"> 
+</div>
+<div class="container" id="homepage_brandintro">
+        <p>大连东软信息学院</p>
+        <p>- Dalian Neusoft University of information -</p>
+        <div class="artfont">
+        </div> 
+</div>
+
+<div class="container" id="navgi">
+    <span class="left_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <a href="">首页</a>
+    <a href="">专业介绍</a>
+    <a href="">数字媒体技术</a>
+    <a href="">虚拟现实</a>
+    <a href="">学生作品</a>
+    <a href="">骨干教师</a>
+    <span class="right_icon">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span>
+</div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <!--   嵌入js插件-->
+   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
 </body>
 </html>
