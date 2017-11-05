@@ -18,13 +18,18 @@
             padding: 0;
             margin: 0;
         }
+/*
         body{
-            
             background-image: url('image/homepage1.png');
             background-repeat: no-repeat;
-          background-size:cover;
-            
-            
+            background-size:cover;  
+        }
+        
+*/
+        .homepage_bg{
+            background-image: url('image/homepage2.png');
+            background-repeat: no-repeat;
+            background-size:100% 120%;
         }
         .kongbai{
             
@@ -32,6 +37,28 @@
             width: auto;
             height:50px;
         }
+        button[class*="sousuo"]{
+            position: absolute;
+            left: 160px;
+            top: 10px;  
+        }
+        @media(max-width:785px){
+            .kongbai{
+            
+            background-color:white;
+            width: auto;
+            height:140px;
+        }
+            .form-control {
+                width: 210px;
+            }
+            button[class*="sousuo"]{
+            position: absolute;
+            left: 170px;
+            top: 20px;  
+        }
+        }
+        
         #brand{
             background-image: url('image/brand.png');
             background-repeat: no-repeat;
@@ -54,11 +81,10 @@
             margin-top: 30px;
             margin-bottom: 50px;
         }
-        #navgi{
-            
+        #navgi{   
             background-color: aliceblue;
-            width: 550px;
-            height: 40px;
+            width: 550px auto;
+            height: 40px auto;
             opacity: 0.8;
             border-radius: 2px;
         }
@@ -66,20 +92,29 @@
             color:black;
             font-size: 15px;
             line-height: 40px;
-            margin: 0 5px;
+            margin: 0 30px;
             font-weight: 600;
         }
+        
         #navgi a:hover{
             color:black;
             text-decoration: none;
             border-top-style: solid;
-            border-top-color: rgb(236, 9, 9);;
+            border-top-color: rgb(236, 9, 9);
             border-top-width: 3px;
             font-size: 15px;
             line-height: 40px;
             text-align: center;
           padding-top:9px;
              font-weight: 600;
+        }
+        #navgi .ban_a{
+            color:gray;
+            
+        }
+        #navgi .ban_a:hover{
+            border-top-width: 0px;
+            color:gray;
         }
         #navgi span.left_icon{
             background-image: url('image/left_iconb.png');
@@ -111,58 +146,88 @@
          outline: none;   
          border: 1px solid rgb(236, 9, 9);; 
          }
+        .red{
+            width: 170px;
+            height: 41px;
+            background-color:rgb(236, 9, 9);
+        }
+        .black{
+            width: 170px;
+            height: 41px;
+            background-color: black;
+        }
+         .red a ,.black a{
+            color: white;
+            padding-left: 50px;
+            font-size:17px;
+            line-height: 41px;
+        }
         
         
     </style>
 </head>
 <body>
-<div class="kongbai">
-    
-
- <form action=""  class="navbar-form navbar-left " >
-    <input type="text" placeholder="搜索" class="form-control inp">
-    <button type="submit" class="btn btn-link btn btn-primary btn-md"  >
-        <span class="glyphicon glyphicon-search" style="color: rgb(236, 9, 9);"> </span>
-    </button>
-</form>
-<form action=""  class="navbar-form navbar-right " >
-    
-    <button type="submit" class="btn btn-link btn btn-primary btn-md"  >
-        <span class="glyphicon glyphicon-log-in" style="color: rgb(236, 9, 9);"> Log-in</span>
+   <div class="homepage_bg">
+    <div class="kongbai ">
+             <form action=""  class="navbar-form navbar-left " >
+            <input type="text" placeholder="搜索" class="form-control inp">
+            <button type="submit"  class="btn btn-link btn btn btn-danger btn-md sousuo"  >
+                <span class="glyphicon glyphicon-search" style="color: rgb(236, 9, 9);"> </span>
+            </button>
+ </form>
         
-    </button>
-    <button type="submit" class="btn btn-link btn btn-primary btn-md"  >
-        
-        <span class="glyphicon glyphicon-user" style="color: rgb(236, 9, 9);"> User</span>
-    </button>
-</form>
-</div>
+             <form action=""  class="navbar-form navbar-right" >
+         <button type="submit" class="btn btn-link btn btn btn-danger btn-md"  >
+                <span class="glyphicon glyphicon-log-in" style="color: rgb(236, 9, 9);"> Log-in</span>
 
+            </button>
+         <button type="submit" class="btn btn-link btn btn btn-danger btn-md"  >
 
-<div class="container" id="brand"> 
-</div>
-<div class="container" id="homepage_brandintro">
-        <p>大连东软信息学院</p>
-        <p>- Dalian Neusoft University of information -</p>
-        <div class="artfont">
-        </div> 
-</div>
-
-<div class="container" id="navgi">
-    <span class="left_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-    <a href="">首页</a>
-    <a href="">专业介绍</a>
-    <a href="">数字媒体技术</a>
-    <a href="">虚拟现实</a>
-    <a href="">学生作品</a>
-    <a href="">骨干教师</a>
-    <span class="right_icon">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </span>
-</div>
+                <span class="glyphicon glyphicon-user" style="color: rgb(236, 9, 9);"> User</span>
+            </button>
+        </form>
+    </div>
+    <div class="container" id="brand"> 
+    </div>
+    <div class="container" id="homepage_brandintro">
+            <p>大连东软信息学院</p>
+            <p>- Dalian Neusoft University of information -</p>
+            <div class="artfont">
+            </div> 
+    </div>
+    <div class="container" id="navgi">
+        <span class="left_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <a class="disabled" href="">首页</a>
+        <a href="">专业介绍</a>
+        <a href="">数字媒体技术</a>
+        <a href="">虚拟现实</a>
+        <a href="">学生作品</a>
+        <a href="">骨干教师</a>
+        <a class="ban_a" href="javascript:volid(0);">系部详情</a>
+        <a class="ban_a" href="javascript:volid(0);">教师</a>
+        <a class="ban_a" href="javascript:volid(0);">其他</a>
+        <span class="right_icon">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="red">
+        <a href="tencent://message/?uin=1249733986&Site=&Menu=yes">联系我们</a>
+    </div>
+</div>  
+     <div class="black">
+        <a href="">了解更多 </a>
+    </div>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <!--   嵌入js插件-->
    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+  
 </body>
 </html>
