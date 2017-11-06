@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+<!--    meta:vp移动设备优先 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" > 
+    <link rel="stylesheet" href="Css/kualiulanqi.css">
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.js"></script>
+    <![ednif]-->
+    <title>专业介绍</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+   
+        .kongbai{
+            
+            background-color:white;
+            width: auto;
+            height:50px;
+        }
+        button[class*="sousuo"]{
+
+            position: relative;
+            left: 190px;
+           
+
+            float: left;
+        }
+        ol{
+            position: relative;
+            float: right;
+            top:100px;
+        }
+       
+        @media(max-width:785px){
+            .kongbai{
+            
+            background-color:white;
+            width: auto;
+            
+        }
+            .form-control {
+                width: 200px;
+            }
+            button[class*="sousuo"]{
+            position: absolute;
+            left: 160px;
+            top: 20px;  
+        }
+            button[class*="log"]{
+             position: absolute;
+                top: 20px;
+            left: 300px;
+        }
+            button[class*="user"]{
+             position: absolute;
+                top: 20px;
+            left:490px;
+        }
+            ol{
+            position: relative;
+            float: right;
+            top:30px;
+        }
+            
+        } 
+         @media(max-width:485px){
+             ol{
+            position: relative;
+            float: right;
+            top:20px;
+        }
+            .kongbai{
+            
+            background-color:white;
+            width: auto;
+            
+        }
+            .form-control {
+                width: 200px;
+            }
+            button[class*="sousuo"]{
+            position: absolute;
+            left: 160px;
+            top: 20px;  
+        }
+            button[class*="log"]{
+             position: absolute;
+                top: 20px;
+            left: 220px;
+        }
+            button[class*="user"]{
+             position: absolute;
+                top: 20px;
+            left:310px;
+        }
+            
+        } 
+        
+        .inp:focus {
+         outline: none;   
+         border: 1px solid rgb(236, 9, 9); 
+            }
+        .inp {
+         outline: none;   
+         border: 1px solid rgb(236, 9, 9); 
+         }
+
+        
+        .breadcrumb {
+             padding: 8px 15px;
+             margin-bottom: 20px;
+            
+             background-color: white;
+             }  
+        .breadcrumb a{
+            color: rgb(236, 9, 9); 
+        }
+        .red{
+            width: auto;
+            height: 40px;
+            background-color: rgb(236, 9, 9); 
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 40px;
+        }
+        .red span{
+            background-image: url('image/bottom_iconr.png');
+            background-repeat: no-repeat; 
+        }
+        .red:hover{
+            background-color:black;
+        }
+    </style>
+</head>
+<body class="container" >
+<!--  搜索和注册等-->
+        <div class="kongbai ">
+             <form action=""  class="navbar-form navbar-left zfor" >
+                <input type="text" placeholder="搜索" class="form-control inp">
+                <button type="submit"  class="btn btn-link btn btn btn-danger btn-md sousuo"  >
+                    <span class="glyphicon glyphicon-search" style="color: rgb(236, 9, 9);"> </span>
+                </button>
+             </form>
+        
+             <form action=""  class="navbar-form navbar-right" >
+         <button type="submit" class="btn btn-link btn btn btn-danger btn-md log"  >
+                <span class="glyphicon glyphicon-log-in" style="color: rgb(236, 9, 9);"> Log-in</span>
+
+            </button>
+         <button type="submit" class="btn btn-link btn btn btn-danger btn-md user"  >
+                <span class="glyphicon glyphicon-user" style="color: rgb(236, 9, 9);"> User</span>
+            </button>
+        </form>
+    </div>
+<!--      导航-->
+       <div class="navgi">
+	<ol class="breadcrumb">
+          <li ><a href="#">视觉传达专业</a></li>
+          <li><a href="#">影视专业</a></li>
+          <li class="active">数字媒体技术</li>
+          <li ><a href="#">数字媒体艺术</a></li>
+          
+    </ol>
+  </div>
+<!--       主图-->
+        <div class="digital_bg">
+            <img src="image/digitalintro.png" class="img-responsive"lt="">
+        </div>
+<!--        picture-->
+<div class="row">
+    <div class="col-sm-6 col-md-6">
+        <a href="#" class="thumbnail">
+            <img src="image/dig_picture_1.png"
+                 alt="图片链接1">
+                 <div class="carousel-caption">
+                 <h3>数字技术</h3>
+                 <p>强调数字技术与AVG设计艺术的有机结合，
+面向增强现实、虚拟现实和数字游戏应用领域重点培养游戏引擎
+工程师、技术美术设计师和互动媒体开发工程师。 </p>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-6">
+        <a href="#" class="thumbnail">
+            <img src="image/dig_picture_2.png"
+                 alt="图片链接2">
+                 <div class="carousel-caption">
+                 <h3>虚拟现实</h3>
+                 <p>在增强现实、虚拟现实及相关行业从事产品设计、
+技术开发、技术美术、前端设计与开发等工作。 </p>
+            </div>
+        </a>
+    </div>
+    
+</div>
+<div class="red">
+   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+
+
+
+    
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <!--   嵌入js插件-->
+   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</body>
+
+</html>
