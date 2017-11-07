@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+<!--    meta:vp移动设备优先 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" > 
+    <link rel="stylesheet" href="Css/kualiulanqi.css">
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.js"></script>
+    <![ednif]-->
+    <title>专业介绍</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+   
+        .kongbai{
+            
+            background-color:white;
+            width: auto;
+            height:50px;
+        }
+        button[class*="sousuo"]{
+
+            position: relative;
+            left: 190px;
+            float: left;
+        }
+        ol{
+            position: relative;
+            float: right;
+            top:100px;
+        }
+        .black{
+            background-color: black;
+        }
+        .black_1{
+            width: 200px;
+            height: 770px;
+            float: left;
+            clear: both;
+            background-color: black;
+        }
+        .black_2{
+            padding: 20px;
+            width: 930px;
+            height: 770px;
+            float: left;
+             background-color: black;
+        }   
+       
+      
+        .inp:focus{
+         outline: none;   
+         border: 1px solid rgb(236, 9, 9); 
+            }
+        .inp {
+         outline: none;   
+         border: 1px solid rgb(236, 9, 9); 
+            position: relative;
+            left: -55px;
+         }
+            
+        ul li{
+            list-style: none;
+        }
+        .red{
+            background-color: rgb(236, 9, 9);
+            width: 200px;
+            height: 200px;
+        }
+        ul ul{
+            display: none;
+        }
+        ul:hover ul{
+            display: block;
+        }
+        ul a{
+            color:white;
+        }
+        ul a:hover{
+            text-decoration: none;
+            color: rgb(236, 9, 9);
+        }
+        ul li{
+             text-align: center;
+             margin-top: 20px;
+             font-size: 17px;
+            font-weight: 550;
+        }
+        ul li ul li{
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .red {
+            display: table-cell;
+            text-align: center;
+           vertical-align: middle; 
+        }
+        .decor{
+            text-align: center;
+            color:white;
+        }
+        .shortred{
+            margin: 0 auto;
+            background-color: rgb(236, 9, 9);
+            width: 220px;
+            height: 9px; 
+        }
+        .nav hr{
+           margin-left: 30px;    
+            position: relative;
+            top: -10px;
+            border-top: 1px solid gray; 
+        }
+        .nav{
+            text-align: center;
+        }
+        .red_bottom{
+            width: auto;
+            height: 40px;
+            background-color: rgb(236, 9, 9); 
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 40px;
+        }
+        .red_bottom span{
+            background-image: url('image/bottom_iconr.png');
+            background-repeat: no-repeat; 
+        }
+        .red_bottom:hover{
+            background-color:black;
+        }
+          @media(max-width:785px){
+            .kongbai{
+            background-color:white;
+            width: auto;
+        }
+            
+            .form-control {
+                width: 200px;
+            }
+            button[class*="sousuo"]{
+            position: absolute;
+            left: 160px;
+            top: 20px;  
+        }
+            button[class*="log"]{
+             position: absolute;
+                top: 20px;
+            left: 300px;
+        }
+            button[class*="user"]{
+             position: absolute;
+                top: 20px;
+            left:490px;
+        }
+            ol{
+            position: relative;
+            float: right;
+            top:30px;
+        }
+            .navbar-form {    
+                margin-left: 40px;}
+              .black_2{
+            width: 850px;
+            height: 3400px; 
+        } 
+        } 
+         @media(max-width:485px){
+             ol{
+            position: relative;
+            float: right;
+            top:20px;
+        }
+            .kongbai{
+            
+            background-color:white;
+            width: auto;
+            
+        }
+            .form-control {
+                width: 200px;
+            }
+            button[class*="sousuo"]{
+            position: absolute;
+            left: 160px;
+            top: 20px;  
+        }
+            button[class*="log"]{
+             position: absolute;
+                top: 20px;
+            left: 220px;
+        }
+            button[class*="user"]{
+             position: absolute;
+                top: 20px;
+            left:310px;
+        }
+            
+        } 
+        @media(max-width:1200px){
+            .black_1{
+            width: 930px;
+            height: 520px; 
+        }  
+        }
+        @media(max-width:700px){
+            .black_1{
+            width: 650px;
+            height: 520px; 
+        } 
+            .black_2{
+            padding: 20px;
+            width: 650px;
+            height: 2770px auto;
+            float: left;
+             background-color: black;
+        } 
+           
+        }
+        @media(max-width:480px){
+            .black_1{
+            width: 400px;
+            height: 520px; 
+        } 
+            .black_2{
+            padding: 20px;
+            width: 400px;
+            height: 2470px ;
+            float: left;
+             background-color: black;
+        } 
+            ul li{
+             text-align: left;
+             padding-left: 40px;
+             
+        }
+        }
+    </style>
+</head>
+<body  class="container ">
+<!--  搜索和注册等-->
+    <div class="kongbai ">
+             <form action=""  class="navbar-form navbar-left zfor" >
+                <input type="text" placeholder="搜索" class="form-control inp">
+                <button type="submit"  class="btn btn-link btn btn btn-danger btn-md sousuo"  >
+                    <span class="glyphicon glyphicon-search" style="color: rgb(236, 9, 9);"> </span>
+                </button>
+             </form>
+        
+             <form action=""  class="navbar-form navbar-right" >
+         <button type="submit" class="btn btn-link btn btn btn-danger btn-md log"  >
+                <span class="glyphicon glyphicon-log-in" style="color: rgb(236, 9, 9);"> Log-in</span>
+
+            </button>
+         <button type="submit" class="btn btn-link btn btn btn-danger btn-md user"  >
+                <span class="glyphicon glyphicon-user" style="color: rgb(236, 9, 9);"> User</span>
+            </button>
+        </form>
+    </div>
+
+   <div class="black">
+<!--     左侧导航栏-->
+      <div class="black_1">
+         <div class="red">
+             <img src="image/stuwork_Art.png" alt="英文艺术字">
+         </div>
+          <ul>
+              <li><a href="">影视摄影与制作</a>
+                  <ul>
+                      <li><a href="">记录摄影</a></li>
+                      <li><a href="">艺术摄影</a>
+                      </li>
+                      <li><a href="">影视作品</a></li>
+                  </ul>
+                  </li>
+            </ul>
+             <ul>
+              <li><a href="">动画专业</a>
+                  <ul>
+                      <li><a href="">广告动画</a></li>
+                      <li><a href="">游戏动画</a>
+                      </li>
+                      <li><a href="">其他动画</a></li>
+                  </ul>
+                  </li>
+            </ul>
+            <ul>
+              <li><a href="">数字媒体艺术</a>
+                  <ul>
+                      <li><a href="">艺术设计</a></li>
+                      <li><a href="">三维设计</a>
+                      </li>
+                      <li><a href="">其他设计</a></li>
+                  </ul>
+                  </li>
+            </ul>
+            <ul>
+              <li><a href="">数字媒体技术</a>
+                  <ul>
+                      <li><a href="">网页制作</a></li>
+                      <li><a href="">游戏制作</a>
+                      </li>
+                      <li><a href="">其他</a></li>
+                  </ul>
+                  </li>
+            </ul>
+            <ul>
+              <li><a href="">视觉传达设计</a>
+                  <ul>
+                      <li><a href="">视觉设计</a></li>
+                      <li><a href="">游戏视觉设计</a>
+                      </li>
+                      <li><a href="">其他</a></li>
+                  </ul>
+                  </li>
+            </ul>
+             
+              
+              
+            
+      </div>
+<!--      右侧图片缩略图-->
+      <div class="black_2">
+        <div class="decor">
+            <div class="shortred"></div>
+            <h1>学生作品</h1>
+            <div class="nav row">
+                <hr class="header-diver col-md-2">
+                <div class="navgi col-md-6">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;影视摄影与制作
+                </div>
+                <hr class="header-diver col-md-2">
+            </div>
+        </div>
+        <div class="row">
+       <div class="col-sm-4 col-md-4">
+        <a href="#" class="thumbnail">
+            <img src="image/stuwork_picture_%20(1).png"
+                 alt="图片链接1">
+                 <div class="carousel-caption">
+                 <p>强调数字技术与AVG设计艺术的有机结合 </p>
+            </div>
+        </a>
+    </div>
+       <div class="col-sm-4 col-md-4">
+        <a href="#" class="thumbnail">
+            <img src="image/stuwork_picture_%20(2).png"
+                 alt="图片链接2">
+                 <div class="carousel-caption">
+                 <p>强调数字技术与AVG设计艺术的有机结合 </p>
+            </div>
+        </a>
+    </div>
+       <div class="col-sm-4 col-md-4">
+        <a href="#" class="thumbnail">
+            <img src="image/stuwork_picture_%20(3).png"
+                 alt="图片链接3">
+                 <div class="carousel-caption">
+                 <p>强调数字技术与AVG设计艺术的有机结合</p>
+            </div>
+        </a>
+    </div>
+       <div class="col-sm-4 col-md-4">
+        <a href="#" class="thumbnail">
+            <img src="image/stuwork_picture_%20(4).png"
+                 alt="图片链接4">
+                 <div class="carousel-caption">
+                 <p>强调数字技术与AVG设计艺术的有机结合</p>
+            </div>
+        </a>
+    </div>
+       <div class="col-sm-4 col-md-4">
+        <a href="#" class="thumbnail">
+            <img src="image/stuwork_picture_%20(5).png"
+                 alt="图片链接5">
+                 <div class="carousel-caption">
+                 <p>强调数字技术与AVG设计艺术的有机结合</p>
+            </div>
+        </a>
+    </div><div class="col-sm-4 col-md-4">
+        <a href="#" class="thumbnail">
+            <img src="image/stuwork_picture_%20(6).png"
+                 alt="图片链接6">
+                 <div class="carousel-caption">
+                 <p>强调数字技术与AVG设计艺术的有机结合 </p>
+            </div>
+        </a>
+    </div><div class="col-sm-4 col-md-4">
+        <a href="#" class="thumbnail">
+            <img src="image/stuwork_picture_%20(6).png"
+                 alt="图片链接7">
+                 <div class="carousel-caption">
+                 <p>强调数字技术与AVG设计艺术的有机结合 </p>
+            </div>
+        </a>
+    </div>
+       <div class="col-sm-4 col-md-4">
+        <a href="#" class="thumbnail">
+            <img src="image/stuwork_picture_%20(6).png"
+                 alt="图片链接8">
+                 <div class="carousel-caption">
+                 <p>强调数字技术与AVG设计艺术的有机结合</p>
+            </div>
+        </a>
+    </div>
+    
+       <div class="col-sm-4 col-md-4">
+        <a href="#" class="thumbnail">
+            <img src="image/stuwork_picture_%20(7).png"
+                 alt="图片链接9">
+                 <div class="carousel-caption">
+                 <p>强调数字技术与AVG设计艺术的有机结合</p>
+            </div>
+        </a>
+    </div>
+       </div>
+<!--       底端更多-->
+        <div class="red_bottom">
+   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+
+   
+    
+</div>
+    </div>
+   
+   
+    
+
+
+    
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <!--   嵌入js插件-->
+   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</body>
+
+</html>
