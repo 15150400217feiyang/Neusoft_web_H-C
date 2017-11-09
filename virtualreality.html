@@ -12,19 +12,21 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.js"></script>
     <![ednif]-->
-    <title>专业介绍</title>
+    <title>虚拟现实实验室</title>
     <style type="text/css">
         *{
             padding: 0;
             margin: 0;
         }
+/*
          .homepage_bg{
            background-image: url('image/All%20%20%20Majors.png');
              background-position: center top;
-/*            background-size:100% 100%;*/
+            background-size:100% 100%;
              width: auto;
              height: 770px;
         } 
+*/
         @media(max-width:785px){
             .homepage_bg{
            background-image: url('image/All%20%20%20Majors.png');
@@ -73,7 +75,7 @@
         } 
         .inp:focus {
          outline: none;   
-         border: 1px solid rgb(236, 9, 9);; 
+         border: 1px solid rgb(236, 9, 9); 
             }
         .inp {
          outline: none;   
@@ -91,14 +93,29 @@
         }
         .decor{
             background-color: rgb(3,2,2);
-            opacity: 0.8;
+            opacity: 0.9;
         }
+        #myCarousel{
+            position: relative;
+            top:-10px;
+        }
+        .carousel-control {
+            color:rgb(236, 9, 9); 
+            
+        }
+        .carousel-indicators  .active{
+            background-color:rgb(236, 9, 9); 
+        }
+        .carousel-indicators li{
+               border: 1px solid rgb(236, 9, 9); 
+        }
+  
         
     </style>
 </head>
 <body  >
-<!--  首页面背景以及 注册搜索登录等-->
-   <div class="homepage_bg">
+<!--   注册搜索登录等-->
+   <div >
         <div class="kongbai ">
              <form action=""  class="navbar-form navbar-left " >
             <input type="text" placeholder="搜索" class="form-control inp">
@@ -120,51 +137,115 @@
     </div>
         <div class="decor">
             <div class="red"></div>
-            <h1>专业介绍</h1>
+            <h1>虚拟现实实验室</h1>
         </div>
       
   
 </div>
-<!--  内容页面-->
+<!--  首页的轮播图-->
    <div class="container">
+<!--      平滑并自动播放-->
+       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!--          计数器-->
+           <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+           </ol> 
+<!--           内容-->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="image/virtualreality_pic1.png" alt="首页轮播图第一张（VR）">
+            </div>
+            <div class="item">
+                <img src="image/virtualreality_pic2.jpg" alt="首页轮播图第二（VR）">
+            </div>
+            <div class="item">
+                <img src="image/virtualreality_pic3.jpg" alt="首页轮播图第三张（VR）">
+            </div>
+            
+        </div>
+<!--        左右以及圆图标-->
+        <a class="carousel-control left" href="#myCarousel" 
+	   data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+	<a class="carousel-control right" href="#myCarousel" 
+	   data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+       </div>
+   </div>
+<!--   下分支的内容-->
+   <div class="container">
+     
        <br>
        <div class="row">
     <div class="col-sm-6 col-md-4 ">
         <a href="javascript:volid(0);" class="thumbnail">
-            <img src="image/pre_picture_3.png"
-                 alt="数字媒体技术图片">
+            <img src="image/virtualreality_pic_bo4.jpg"
+                 alt="VR_picture_4">
+              <div class="carousel-caption">
+                 <h3>VR在身边</h3>
+                 <p>VR应用就在你我身边... VR(虚拟现实)技术可广泛的应用于城市规划、室内设计、工业仿真...</p>
+            </div>
+   
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <a href="javascript:volid(0);" class="thumbnail">
+            <img src="image/virtualreality_pic_bo5.jpg"
+                 alt="VR_picture_5">
+                 <div class="carousel-caption">
+                 <h3>VR盒子介绍</h3>
+                 <p>为解决用户对VR资源的需求,国内VR厂商开发出基于VR虚拟现实技术...</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <a href="javascript:volid(0);" class="thumbnail">
+            <img src="image/virtualreality_pic_bo6.jpg"
+                 alt="VR_picture_6">
+                 <div class="carousel-caption">
+                 <h3>VR头盔</h3>
+                 <p>即VR头显，虚拟现实头戴式显示设备。由于早期没有头显这个概念。</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <a href="javascript:volid(0);" class="thumbnail">
+            <img src="image/virtualreality_pic_bo1.png"
+                 alt="VR_picture_1">
+                 <div class="carousel-caption">
+                 <h3>VR前景</h3>
+                 <p>京软件行业协会执行会长孙伟教授从各自的专业领域出发...</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <a href="javascript:volid(0);" class="thumbnail">
+            <img src="image/virtualreality_pic_bo2.png"
+                 alt="VR_picture_2">
+                 <div class="carousel-caption">
+                 <h3>VR实景体验</h3>
                  
+            </div>
         </a>
     </div>
     <div class="col-sm-6 col-md-4">
         <a href="javascript:volid(0);" class="thumbnail">
-            <img src="image/pre_picture_4.png"
-                 alt="数字媒体艺术图片">
-        </a>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <a href="javascript:volid(0);" class="thumbnail">
-            <img src="image/pre_picture_1.png"
-                 alt="影视专业的图片">
-        </a>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <a href="javascript:volid(0);" class="thumbnail">
-            <img src="image/pre_picture_2.1.png"
-                 alt="动画专业的图片">
-        </a>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <a href="javascript:volid(0);" class="thumbnail">
-            <img src="image/timg1%20.png"
-                 alt="视觉传达的图片">
+            <img src="image/virtualreality_pic_bo3.png"
+                 alt="VR_picture_3">
+                 <div class="carousel-caption">
+                 <h3>VR实景体验</h3>
+                 
+            </div>
         </a>
     </div>
     
     
     
-</div>
+
    </div>  
+    </div>
+      
     
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <!--   嵌入js插件-->
