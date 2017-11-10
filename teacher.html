@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+<!--    meta:vp移动设备优先 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" > 
+    <link rel="stylesheet" href="Css/kualiulanqi.css">
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.js"></script>
+    <![ednif]-->
+    <title>虚拟现实实验室</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        
+        @media(max-width:785px){
+            .homepage_bg{
+           background-image: url('image/All%20%20%20Majors.png');
+            background-size: contain;
+                background-repeat: no-repeat;   
+                height: 370px;
+        } 
+            
+        }
+        .kongbai{
+            
+            background-color:white;
+            width: auto;
+            height:50px;
+        }
+        button[class*="sousuo"]{
+            position: absolute;
+            left: 160px;
+            top: 10px;  
+        }
+        @media(max-width:785px){
+            .kongbai{
+            
+            background-color:white;
+            width: auto;
+            
+        }
+            .form-control {
+                width: 200px;
+            }
+            button[class*="sousuo"]{
+            position: absolute;
+            left: 160px;
+            top: 20px;  
+        }
+            button[class*="log"]{
+             position: absolute;
+                top: 20px;
+            left: 200px;
+        }
+            button[class*="user"]{
+             position: absolute;
+                top: 20px;
+            left:290px;
+        }
+        } 
+        .inp:focus {
+         outline: none;   
+         border: 1px solid rgb(236, 9, 9); 
+            }
+        .inp {
+         outline: none;   
+         border: 1px solid rgb(236, 9, 9);; 
+         }
+        .red{
+            margin: 0 auto;
+            background-color: rgb(236, 9, 9);
+            width: 220px;
+            height: 5px; 
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        .decor{
+            background-color: rgb(3,2,2);
+            opacity: 0.9;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+        .teacher_bg{
+            position: relative;
+            top: -10px;
+            background-color: black;
+            width: 100%px;
+            height: auto;
+        }
+        
+        .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover 
+        {
+            color: #fff;
+            background-color: rgb(236, 9, 9); 
+            
+        }
+        .nav>li>a {
+        position: relative;
+            top: 15px;
+        display: block;
+        padding: 5px 15px;
+        }
+        .nav>li>a {
+    color: white;
+    
+}   
+        .nav>li>a:hover,.nav-pills>li>a:focus{
+    color: white;
+    background-color: rgb(236, 9, 9); 
+}   
+        .middle{
+            margin-top: 70px  
+        }    
+        .left{
+            background-color: black;
+            height: 467px;
+        }
+        .left div{
+            margin: 0 auto;
+            padding-top: 130px;
+            width: 5px;
+            color: white;
+            
+        }
+        .midd{
+            background-color: black;
+            padding-left: 0;
+            
+        }
+        .midd_right{
+            background-color: black;
+            height: 467px;
+            overflow-x: hidden;
+/*            text-overflow: ellipsis;*/
+            overflow-y: scroll;
+            color: white;
+            margin-left: 10px;
+        }
+        .red_bottom{
+            width: auto;
+            height: 40px;
+            background-color: rgb(236, 9, 9); 
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 40px;
+        
+        }
+        .red_bottom span{
+            background-image: url('image/bottom_iconr.png');
+            background-repeat: no-repeat; 
+        }
+        .red_bottom:hover{
+            background-color:black;
+        }
+        
+    </style>
+</head>
+<body  >
+<!--   注册搜索登录等-->
+   <div >
+        <div class="kongbai ">
+             <form action=""  class="navbar-form navbar-left " >
+            <input type="text" placeholder="搜索" class="form-control inp">
+            <button type="submit"  class="btn btn-link btn btn btn-danger btn-md sousuo"  >
+                <span class="glyphicon glyphicon-search" style="color: rgb(236, 9, 9);"> </span>
+            </button>
+ </form>
+        
+             <form action=""  class="navbar-form navbar-right" >
+         <button type="submit" class="btn btn-link btn btn btn-danger btn-md log"  >
+                <span class="glyphicon glyphicon-log-in" style="color: rgb(236, 9, 9);"> Log-in</span>
+
+            </button>
+         <button type="submit" class="btn btn-link btn btn btn-danger btn-md user"  >
+
+                <span class="glyphicon glyphicon-user" style="color: rgb(236, 9, 9);"> User</span>
+            </button>
+        </form>
+    </div>
+        <div class="decor">
+            <div class="red"></div>
+            <h1>骨干教师</h1>
+        </div>
+      
+  
+</div>
+   <div class="teacher_bg container">
+<!--         导航-->
+   <div class="midd_top row">
+             <ul class="nav nav-pills col-sm-offset-5">
+                 <li role="presentation" class="active"><a href="#">刚家林</a></li>
+                  <li role="presentation"><a href="#">宋书魁</a></li>
+                  <li role="presentation"><a href="#">路遥</a></li>
+                   <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      ...... <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+    <li role="presentation" ><a href="#">杨艺晗</a></li>
+                  <li role="presentation"><a href="#">徐静</a></li>
+                  <li role="presentation"><a href="#">付力娅</a></li>
+                   <li role="presentation" class="dropdown"> </ul>
+  </li>
+
+
+             </ul>
+         </div>
+<!--     中间部分包括图片和文字介绍-->
+   <div class="row middle">
+       <div class="left col-xs-2 col-md-1">
+           <div>数字媒体技术团队</div>
+       </div>
+<!--       教师照片-->
+       <div class="midd  col-xs-10 col-md-5">
+           <img class="img-responsive"src="image/teacher.jpg" alt="刚家林老师图片">
+       </div>
+<!--       教师资料-->
+       <div class="midd_right col-xs-10 col-md-5">
+          <p><strong>个人介绍</strong> </p><br>
+          教师姓名 	:刚家林 <br>	所属专业团队 :	数字媒体技术 <br>
+职称 :	讲师 <br>	学科专业 :	计算机科学与技术 <br>
+学历 :	硕士 	<br>毕业院校 :	大连海事大学 <br>
+研究方向 :	用户体验设计、移动互联网开发 <br>
+人生格言 :	Actions speak louder than words <br><br>
+
+           <p><strong>相关产业背景</strong> </p><p>
+2002年7月－2004年5月，大连东软信息学院 研发中心 软件工程师<br> 
+2004年5月－2011年6月，大连东软信息学院 实验中心 教师<br> 
+2011年6月－至今，大连东软信息学院 数字艺术系 教师 <br>
+  1、 research on interaction design of the multistation network based on android platform，TMES(国际学术会议论文集,EI检索)，第一作者，2013年9月30日<br> 
+      2、 移动支付平台设计中的交互体验研究，工程技术（国家期刊），第一作者，2015年9月15日 <br>
+      3、 基于CDIO的一体化实验实践教学环境的建设，实验室科学（国家期刊），第二作者，2010年6期 <br>
+      4、 软件项目管理流程的研究，计算<br>机光盘软件与应用（国家期刊），第一作者，2010年12期 <br>
+      5、 虚拟三维交互技术的工业设计应用研究，城市建设理论研究（国家期刊），第一作者，2015年30期 <br>
+      6、 中小软件企业过程管理模型的研究，中国科技博览，第一作者，2010年31期 <br>
+      7、 去伪控制基于数据的过程优化控制方法，控制工程（核心期刊），第三作 者，2011年9月20日 <br>
+      8、 软件统一过程管理模式的研究，大连海事大学，第一作者，2010年9月1日 <br>
+      9、 The Design of Web User Interface Based on Dynamic Re-components，International Conference on Technology Management and Engineering Science（国际学术会议论文集，EI检索），第二作者，2013年6月 <br>
+      10、《动画场景设计》，大连理工大学出版社（“十二五”职业教育规划教材），副主编，2015年6月 <br>
+      11、《海底世界》交互平台开发，横向科研（5万），排名第一，2016年4月11日 <br>
+      12、flash动漫课件开发，横向科研（5万），排名第一，2013年7月11日 <br>
+      13、flash动漫课件改编，横向科研（4万），排名第一，2013年9月11日 <br>
+      14、基于CDIO工程教育理念的大学视频公开课网络平台开发研究与实践，校级教改立项，排名第二，2012年 <br>
+      15、基于TOPCARES-CDIO教育理念数字媒体技术应用型人才培养模式的创新与实践，省级教改立项，排名第四，2014年 
+
+
+  </p>
+       
+
+       </div>
+       
+   </div>
+   <br>
+<!--   更多按钮-->
+<div class="red_bottom">
+   <a href=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+</div>
+      
+   </div> 
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <!--   嵌入js插件-->
+   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
