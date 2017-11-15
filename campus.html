@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+<!--    meta:vp移动设备优先 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="keywords" content="大连东软,数字艺术系,Neusoft">
+    <meta name="description" content="大连东软信息学院,校历史,师资力量,学生成绩等">
+    <meta name="author" content="费洋，1249733986@qq.com">
+    <meta name="copyright" content="本页版权归费洋所有。All Rights Reserved">
+    <meta name="generator" content="Brackets">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" > 
+    <link rel="stylesheet" href="final.css">
+    
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.js"></script>
+    <![ednif]-->
+    <title>学校详情</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+/*
+        body{
+            background-image: url('image/homepage1.png');
+            background-repeat: no-repeat;
+            background-size:cover;  
+        }
+        
+*/
+        .homepage_bg{
+            background-image: url('image/homepage2.png');
+            background-repeat: no-repeat;
+            background-size:100% 120%;
+        }
+        .kongbai{
+            
+            background-color:white;
+            width: auto;
+            height:50px;
+        }
+        button[class*="sousuo"]{
+            position: absolute;
+            left: 160px;
+            top: 10px;  
+        }   
+        @media(max-width:785px){
+            .kongbai{
+            
+            background-color:white;
+            width: auto;
+            
+        }
+            .form-control {
+                width: 200px;
+            }
+            button[class*="sousuo"]{
+            position: absolute;
+            left: 160px;
+            top: 20px;  
+        }
+            button[class*="log"]{
+             position: absolute;
+                top: 20px;
+            left: 200px;
+        }
+            button[class*="user"]{
+             position: absolute;
+                top: 20px;
+            left:290px;
+        }
+        }   
+        #brand{
+            background-image: url('image/brand.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 50%;
+            padding-top: 200px;
+        }   
+        #homepage_brandintro p{
+            
+            color: white;
+            text-align: center;
+        }
+        #homepage_brandintro .artfont{
+           background-image: url('image/Digital%20Arts%20Department.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        #navgi{   
+            background-color: aliceblue;
+            width: 550px auto;
+            height: 40px auto;
+            opacity: 0.8;
+            border-radius: 2px;
+        }
+        #navgi a{
+            color:black;
+            font-size: 15px;
+            line-height: 40px;
+            margin: 0 30px;
+            font-weight: 600;
+        }     
+        #navgi a:hover{
+            color:black;
+            text-decoration: none;
+            border-top-style: solid;
+            border-top-color: rgb(236, 9, 9);
+            border-top-width: 3px;
+            font-size: 15px;
+            line-height: 40px;
+            text-align: center;
+          padding-top:9px;
+             font-weight: 600;
+        }
+        #navgi .ban_a{
+            color:gray;
+            
+        }
+        #navgi .ban_a:hover{
+            border-top-width: 0px;
+            color:gray;
+        }
+        #navgi span.left_icon{
+            background-image: url('image/left_iconb.png');
+            background-position: left;
+            background-repeat: no-repeat;
+            width: auto;
+            height: 30%;
+            margin: 0px 10px;
+        }
+        #navgi span.left_icon:hover{
+            background-image: url('image/left_iconr.png');   
+        }
+        #navgi span.right_icon{
+            background-image: url('image/right_iconb.png');
+            background-position: right;
+            background-repeat: no-repeat;
+            width: auto;
+            height: 30%;
+            margin: 0px 10px;
+        }
+        #navgi span.right_icon:hover{
+            background-image: url('image/right_iconr.png');    
+        }
+        .inp:focus {
+         outline: none;   
+         border: 1px solid rgb(236, 9, 9);; 
+            }
+        .inp {
+         outline: none;   
+         border: 1px solid rgb(236, 9, 9);; 
+         }
+        .red{
+            width: 170px;
+            height: 41px;
+            background-color:rgb(236, 9, 9);
+        }
+        .black{
+            width: 170px;
+            height: 41px;
+            background-color: black;
+        }
+        .red a ,.black a{
+            color: white;
+            padding-left: 50px;
+            font-size:17px;
+            line-height: 41px;
+        }
+        .kongbai a{
+            text-decoration: none;
+            padding-left: 10px;
+            color:rgb(236, 9, 9);
+        }
+        .banquan{
+            background-color:#1e1e1e ;
+            color: white;
+            padding: 20px;
+        }
+        video {
+        
+            width: 100%;
+            height: auto;
+        }
+        
+        
+    </style>
+</head>
+<body>
+<!--   登录与注册-->
+    <div class="kongbai ">
+             <form action="homepage.html"  class="navbar-form navbar-left " >
+                <input type="text" placeholder="搜索" class="form-control inp">
+                <button type="submit"  class="btn btn-link btn btn btn-danger btn-md sousuo"  >
+                    <span class="glyphicon glyphicon-search" style="color: rgb(236, 9, 9);"> </span>
+                </button>
+             </form>
+        
+             <form action="homepage.html"  class="navbar-form navbar-right" >
+                 <button type="submit" class="btn btn-link btn btn btn-danger btn-md log"  >
+                    <span class="glyphicon glyphicon-log-in" style="color: rgb(236, 9, 9);"> <a href="rigister.html"target="_blank">Rigister</a></span>
+                </button>
+                 <button type="submit" class="btn btn-link btn btn btn-danger btn-md user"  >
+                    <span class="glyphicon glyphicon-user" style="color: rgb(236, 9, 9);"> <a href="login.html" target="_blank">Log-in</a></span>
+                </button>
+        </form>
+    </div>
+<!--    视频播放-->
+  <video width="320" height="240" controls autoplay="autoplay">
+  <source src="video/AD.mp4" type="video/mp4">
+
+</video>
+<div class="container">
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            历史沿革
+        </h3>
+    </div>
+    <div class="panel-body">
+        
+&nbsp;&nbsp;&nbsp;&nbsp;2008年9月28日，教育部批准东北大学东软信息学院转设为大连东软信息学院，学校成为独立设置的普通本科高等院校。[1] 
+2012年5月，大连东软信息学院启动了与东北大学工商管理学院合作培养项目管理专业学位工程硕士的研究生培养工作，后由于教育部政策调整，东北大学软件工程硕士和项目管理硕士在大连东软信息学院的招生暂停...
+
+    </div>
+    </div>
+    <div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            师资力量
+        </h3>
+    </div>
+    <div class="panel-body">
+        
+&nbsp;&nbsp;&nbsp;&nbsp;截至2016年9月，学校有正式教职工734人，专任教师中，副教授及以上职称占比38.5%，硕士及以上学位占比91.5%。双师双能型教师占比52.4%，具有专业职称或行业资格的教师占比为26.6%，有国务院政府津贴获得者1人，辽宁省优秀专家1人，辽宁省高等学校教学名师6人，辽宁省“百千万人才工程”百人层次1人、万人层次3人，辽宁省中青年骨干教师3人，辽宁省高等学校优秀人才支持计划3人...
+
+    </div>
+    </div>
+    <div class="panel panel-warning">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            教学成果
+        </h3>
+    </div>
+    <div class="panel-body">
+&nbsp;&nbsp;&nbsp;&nbsp;2005年7月，由温涛主持完成的《创新型IT职业人才培养模式的探索与实践》项目经几轮答辩终获2005年高等教育国家级教学成果一等奖、辽宁省教育成果特等奖。[21] 
+2009年9月，由温涛主持完成的《软件人才培养的实训平台建设与应用》项目，获得第六届高等教育国家级教学成果奖二等奖。[21] 
+
+    </div>
+    </div>
+</div>
+<!--    脚注-->
+    <div style="font:12px Tahoma; margin:0px auto; text-align:center;" class="banquan">
+			<div>
+			
+			Copyright &copy; &nbsp;&nbsp;2000-2017&nbsp; 
+			<a href="http://www.neusoft.edu.cn/">大连东软信息学院</a> ALL RIGHT RESERVED<br/>联系方式：<a href="mailto:someone@example.com">1249733986@qq.com</a><br/>
+			ICP:xxxxxxxxxxxxxxxxxx
+			</div> 
+		</div>
+		
+   
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <!--   嵌入js插件-->
+   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
